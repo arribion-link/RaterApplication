@@ -22,121 +22,130 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        ListView1 = New ListView()
+        userListField = New ListView()
         Label1 = New Label()
-        Label2 = New Label()
-        Label3 = New Label()
+        username = New Label()
+        usercomment = New Label()
         Label4 = New Label()
-        TextBox1 = New TextBox()
-        TextBox2 = New TextBox()
-        Button1 = New Button()
-        Button2 = New Button()
+        nameInput = New TextBox()
+        commentBtn = New TextBox()
+        clearBtn = New Button()
+        submitBtn = New Button()
         SuspendLayout()
         ' 
-        ' ListView1
+        ' userListField
         ' 
-        ListView1.Location = New Point(40, 286)
-        ListView1.Name = "ListView1"
-        ListView1.Size = New Size(908, 253)
-        ListView1.TabIndex = 0
-        ListView1.UseCompatibleStateImageBehavior = False
+        userListField.BackColor = SystemColors.InactiveCaption
+        userListField.Location = New Point(28, 405)
+        userListField.Name = "userListField"
+        userListField.Size = New Size(908, 253)
+        userListField.TabIndex = 0
+        userListField.UseCompatibleStateImageBehavior = False
         ' 
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Location = New Point(441, 28)
+        Label1.ForeColor = SystemColors.HotTrack
+        Label1.Location = New Point(368, 9)
         Label1.Name = "Label1"
-        Label1.Size = New Size(63, 25)
+        Label1.Size = New Size(241, 25)
         Label1.TabIndex = 1
-        Label1.Text = "Label1"
+        Label1.Text = "Rating Collection Application"
         ' 
-        ' Label2
+        ' username
         ' 
-        Label2.AutoSize = True
-        Label2.Location = New Point(51, 85)
-        Label2.Name = "Label2"
-        Label2.Size = New Size(63, 25)
-        Label2.TabIndex = 2
-        Label2.Text = "Label2"
+        username.AutoSize = True
+        username.Location = New Point(28, 86)
+        username.Name = "username"
+        username.Size = New Size(63, 25)
+        username.TabIndex = 2
+        username.Text = "Name:"
         ' 
-        ' Label3
+        ' usercomment
         ' 
-        Label3.AutoSize = True
-        Label3.Location = New Point(40, 158)
-        Label3.Name = "Label3"
-        Label3.Size = New Size(63, 25)
-        Label3.TabIndex = 3
-        Label3.Text = "Label3"
+        usercomment.AutoSize = True
+        usercomment.Location = New Point(28, 190)
+        usercomment.Name = "usercomment"
+        usercomment.Size = New Size(95, 25)
+        usercomment.TabIndex = 3
+        usercomment.Text = "Comment:"
         ' 
         ' Label4
         ' 
         Label4.AutoSize = True
-        Label4.Location = New Point(41, 251)
+        Label4.Location = New Point(28, 377)
         Label4.Name = "Label4"
-        Label4.Size = New Size(63, 25)
+        Label4.Size = New Size(115, 25)
         Label4.TabIndex = 4
-        Label4.Text = "Label4"
+        Label4.Text = "User Rating's"
         ' 
-        ' TextBox1
+        ' nameInput
         ' 
-        TextBox1.Location = New Point(42, 124)
-        TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(876, 31)
-        TextBox1.TabIndex = 7
+        nameInput.BackColor = SystemColors.GradientInactiveCaption
+        nameInput.Location = New Point(28, 124)
+        nameInput.Name = "nameInput"
+        nameInput.Size = New Size(890, 31)
+        nameInput.TabIndex = 7
         ' 
-        ' TextBox2
+        ' commentBtn
         ' 
-        TextBox2.Location = New Point(42, 184)
-        TextBox2.Name = "TextBox2"
-        TextBox2.Size = New Size(876, 31)
-        TextBox2.TabIndex = 8
+        commentBtn.BackColor = SystemColors.GradientInactiveCaption
+        commentBtn.Location = New Point(28, 218)
+        commentBtn.Name = "commentBtn"
+        commentBtn.Size = New Size(908, 31)
+        commentBtn.TabIndex = 8
         ' 
-        ' Button1
+        ' clearBtn
         ' 
-        Button1.Location = New Point(104, 243)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(212, 36)
-        Button1.TabIndex = 9
-        Button1.Text = "Button1"
-        Button1.UseVisualStyleBackColor = True
+        clearBtn.BackColor = SystemColors.HotTrack
+        clearBtn.ForeColor = Color.Black
+        clearBtn.Location = New Point(28, 278)
+        clearBtn.Name = "clearBtn"
+        clearBtn.Size = New Size(400, 75)
+        clearBtn.TabIndex = 9
+        clearBtn.Text = "CLEAR"
+        clearBtn.UseVisualStyleBackColor = False
         ' 
-        ' Button2
+        ' submitBtn
         ' 
-        Button2.Location = New Point(672, 246)
-        Button2.Name = "Button2"
-        Button2.Size = New Size(112, 34)
-        Button2.TabIndex = 10
-        Button2.Text = "Button2"
-        Button2.UseVisualStyleBackColor = True
+        submitBtn.BackColor = SystemColors.MenuHighlight
+        submitBtn.ForeColor = Color.Linen
+        submitBtn.Location = New Point(538, 278)
+        submitBtn.Name = "submitBtn"
+        submitBtn.Size = New Size(398, 75)
+        submitBtn.TabIndex = 10
+        submitBtn.Text = "SUBMIT"
+        submitBtn.UseVisualStyleBackColor = False
         ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(974, 582)
-        Controls.Add(Button2)
-        Controls.Add(Button1)
-        Controls.Add(TextBox2)
-        Controls.Add(TextBox1)
+        BackColor = SystemColors.ControlLightLight
+        ClientSize = New Size(974, 670)
+        Controls.Add(submitBtn)
+        Controls.Add(clearBtn)
+        Controls.Add(commentBtn)
+        Controls.Add(nameInput)
         Controls.Add(Label4)
-        Controls.Add(Label3)
-        Controls.Add(Label2)
+        Controls.Add(usercomment)
+        Controls.Add(username)
         Controls.Add(Label1)
-        Controls.Add(ListView1)
+        Controls.Add(userListField)
         Name = "Form1"
         Text = "Form1"
         ResumeLayout(False)
         PerformLayout()
     End Sub
 
-    Friend WithEvents ListView1 As ListView
+    Friend WithEvents userListField As ListView
     Friend WithEvents Label1 As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Label3 As Label
+    Friend WithEvents username As Label
+    Friend WithEvents usercomment As Label
     Friend WithEvents Label4 As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
+    Friend WithEvents nameInput As TextBox
+    Friend WithEvents commentBtn As TextBox
+    Friend WithEvents clearBtn As Button
+    Friend WithEvents submitBtn As Button
 
 End Class
